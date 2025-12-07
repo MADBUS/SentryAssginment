@@ -409,17 +409,6 @@ sentry-project/
 
 ---
 
-## 📝 기술 블로그
-
-프로젝트 개발 과정에서 겪은 기술적 도전과 해결 과정을 정리한 블로그 포스트:
-
-- [WebSocket을 활용한 실시간 영상 스트리밍 구현기](#)
-- [멀티스레드 환경에서의 Frame Merge 최적화](#)
-- [Spring Security + JWT로 구현하는 안전한 인증 시스템](#)
-- [OpenCV와 Java 연동: 실시간 영상 분석 파이프라인](#)
-
----
-
 ## 📚 참고 자료
 
 - [Spring Framework Documentation](https://spring.io/projects/spring-framework)
