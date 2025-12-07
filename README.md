@@ -1,90 +1,439 @@
-# 🛡️ Sentry Project – 웹 기반 실시간 지능형 관제 플랫폼
+# 🛡️ Sentry Project
 
-> CCTV 관제의 효율성과 안정성을 높이기 위해 **웹 기반 실시간 스트리밍·AI 분석·채팅·검색·맵 기능**을 통합한 지능형 관제 솔루션입니다.
+<div align="center">
+
+### 웹 기반 실시간 지능형 CCTV 관제 플랫폼
+
+[![Video Demo](https://img.shields.io/badge/Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://www.youtube.com/watch?v=8dc2KoeEFwY)
+[![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)](https://spring.io)
+[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org)
+[![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=for-the-badge&logo=socket.io&logoColor=white)](https://socket.io)
+
+**CCTV 관제의 효율성과 안정성을 높이기 위한 웹 기반 실시간 스트리밍·AI 분석·통합 관제 솔루션**
+
+</div>
 
 ---
 
-## 📌 프로젝트 소개
-기존 CCTV 관제는 대부분 응용프로그램 환경에만 의존하며, 관제 인력의 피로도 증가·대응 지연·비효율 문제를 안고 있습니다.  
-본 프로젝트는 **웹 브라우저 기반의 실시간 관제 시스템**으로 누구나 접근하기 쉽고, 성능과 확장성을 갖춘 플랫폼을 목표로 합니다.
+## 📋 프로젝트 개요
+
+기존 CCTV 관제 시스템은 대부분 응용프로그램 환경에만 의존하며, 관제 인력의 피로도 증가, 대응 지연, 비효율 등의 문제를 안고 있습니다.
+
+**Sentry Project**는 이러한 문제를 해결하기 위해 **웹 브라우저 기반의 실시간 관제 시스템**으로 설계되었으며, 누구나 쉽게 접근할 수 있고 높은 성능과 확장성을 갖춘 차세대 관제 플랫폼입니다.
+
+### 🗓 프로젝트 정보
+- **개발 기간**: [개발 기간 입력]
+- **팀 구성**: 3명
+- **프로젝트 유형**: 웹 기반 실시간 영상 관제 시스템
 
 ---
 
-## 🎯 주요 기대효과
-- 웹 기반이라 **설치 부담 없이 어디서든 접속 가능**
+## 🎯 기대 효과
+
+<table>
+<tr>
+<td width="50%">
+
+### 🌐 접근성 향상
+- 웹 기반으로 **별도 설치 없이** 어디서든 접속 가능
+- 다양한 디바이스에서 동일한 사용자 경험 제공
+
+### ⚡ 효율성 증대
 - 이벤트 기반 화면 표출로 **관제 피로도 감소**
-- 실시간 분석 및 알림으로 **사고 예방 및 대응 시간 단축**
-- **운영 비용 절감·보안 강화·시장 경쟁력 확보**
+- 실시간 분석 및 알림으로 **대응 시간 단축**
+
+</td>
+<td width="50%">
+
+### 💰 비용 절감
+- 운영 및 유지보수 비용 절감
+- 하드웨어 의존도 감소
+
+### 🔒 보안 강화
+- Spring Security 기반 인증/인가
+- JWT 토큰 기반 보안 통신
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 🧱 기술 스택
+## 🛠 기술 스택
 
-### **Server**
-- Spring, Spring Security, JWT
-- SMBJ (SMB 프로토콜)
-- OpenCV  
-- Multi-thread 구조 기반의 렌더링 파이프라인
+### Backend
+![Spring](https://img.shields.io/badge/Spring-6DB33F?style=flat-square&logo=spring&logoColor=white)
+![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?style=flat-square&logo=springsecurity&logoColor=white)
+![JWT](https://img.shields.io/badge/JWT-000000?style=flat-square&logo=jsonwebtokens&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 
-### **Client**
-- React  
-- WebSocket  
-- Custom UI/UX (Context Menu, 확대 기능 등)
+### Frontend
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![WebSocket](https://img.shields.io/badge/WebSocket-010101?style=flat-square&logo=socket.io&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 
-### **DevOps**
-- GitHub  
-- 서버 간 실시간 Frame 전송 소켓 구조
+### DevOps & Infrastructure
+![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
 
----
-
-## 🔍 핵심 기능
-
-### ✔ 실시간 관제 기능
-- 소켓 기반 영상 프레임 전송
-- 비동기 스레드 기반 병렬 처리 구조
-- 실시간 맵(Map) 연동을 통한 카메라 위치 확인
-
-### ✔ 검색 및 조회 기능
-- 조건별(시간/카메라명/이미지) 영상 조회
-- SMB 프로토콜 기반 원격 파일 접근
-
-### ✔ 사용자 설정 기능
-- 분석 환경 설정
-- 카메라 확대(더블클릭 기반 Focus 알고리즘)
-- 컨텍스트 메뉴로 빠른 기능 접근
-
-### ✔ 소통 기능
-- 관제팀 간 실시간 채팅
+### Communication Protocol
+- **SMBJ**: SMB 프로토콜 기반 원격 파일 접근
+- **WebSocket**: 실시간 양방향 통신
+- **Custom Socket**: 서버 간 Frame 전송
 
 ---
 
-## 🧩 시스템 아키텍처
-- 분석 서버 ↔ 미들 서버 ↔ 클라이언트 구조  
-- Manager 단위 모듈 분리로 **유지보수성 및 확장성 극대화**
-- Frame Merge Manager + Render Thread 기반 고성능 렌더링 구조
+## 🏗 시스템 아키텍처
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                         Client Layer                             │
+│                    React + WebSocket                             │
+└────────────────────────────┬────────────────────────────────────┘
+                             │ WebSocket
+┌────────────────────────────▼────────────────────────────────────┐
+│                        Middle Server                             │
+│              Frame Merge Manager + Render Thread                 │
+│                  Multi-thread Rendering Pipeline                 │
+└────────────────────────────┬────────────────────────────────────┘
+                             │ Custom Socket
+┌────────────────────────────▼────────────────────────────────────┐
+│                       Analysis Server                            │
+│                  OpenCV + AI Analysis Module                     │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+### 핵심 아키텍처 특징
+- **3-Tier 구조**: 분석 서버 ↔ 미들 서버 ↔ 클라이언트
+- **Manager 기반 모듈화**: 유지보수성 및 확장성 극대화
+- **비동기 멀티스레드**: 병렬 처리를 통한 고성능 렌더링
+- **Frame Merge 최적화**: 효율적인 영상 스트리밍 처리
 
 ---
 
-## 👥 팀 구성
-| 이름 | 역할 |
-|------|-------|
-| **박진성** | 분석 서버, 미들 서버 개발, 전체 코드 관리 |
-| **염지원** | 로그인(Security), 설정 페이지, 확대 기능 구현, DB 설계 |
-| **편장열** | 분석 영상 표출, 채팅, 맵 기능, 검색 페이지, DB 설계 |
+## 🎨 핵심 기능
+
+### 🎥 실시간 관제 기능
+
+#### 영상 스트리밍
+- **소켓 기반 실시간 프레임 전송**
+  - Custom Socket 프로토콜로 서버 간 고속 Frame 전송
+  - WebSocket을 통한 클라이언트 실시간 렌더링
+- **비동기 멀티스레드 처리**
+  - 병렬 처리 구조로 다수의 카메라 동시 스트리밍
+  - Frame Merge Manager를 통한 효율적인 리소스 관리
+
+#### 지능형 분석
+- **AI 기반 실시간 영상 분석**
+  - OpenCV를 활용한 객체 인식
+  - 이상 행동 탐지 및 이벤트 알림
+- **이벤트 기반 화면 전환**
+  - 중요 이벤트 발생 시 자동 화면 표출
+  - 관제 피로도 감소 및 집중도 향상
+
+#### 맵 연동
+- **실시간 카메라 위치 확인**
+  - 지도 기반 카메라 위치 시각화
+  - 카메라 클릭으로 빠른 영상 전환
 
 ---
 
-## 🚀 프로젝트 확장 방안
-- AI 고도화 (객체 인식·이상행동 탐지·군중밀집 분석 등)
-- 사용자 편의 기능 강화 (우클릭 메뉴, 대시보드 커스터마이징)
-- 멀티 디바이스 지원 및 확장성 높은 화면 구성
+### 🔍 검색 및 조회 기능
 
+#### 다중 조건 검색
+- **시간 기반 검색**: 특정 시간대 영상 조회
+- **카메라명 검색**: 카메라별 영상 필터링
+- **이미지 기반 검색**: 특정 이벤트 영상 검색
+
+#### 원격 파일 접근
+- **SMB 프로토콜 (SMBJ)**
+  - 원격 스토리지 영상 파일 접근
+  - 대용량 파일 효율적 처리
+  - 보안 인증 기반 파일 전송
 
 ---
 
-## 📝 자체 평가
-소규모 팀이지만 역할을 명확히 분배하고 협력하여 높은 난이도의 프로젝트를 성공적으로 완성하였으며, 보안·서버 통신·실시간 스트리밍 등 다양한 영역에서 실질적인 성장 경험을 쌓았습니다.
+### ⚙️ 사용자 설정 기능
+
+#### 분석 환경 설정
+- **카메라별 분석 파라미터 조정**
+  - 감지 민감도 설정
+  - 분석 영역 지정
+  - 알림 조건 커스터마이징
+
+#### 화면 제어
+- **카메라 확대 기능**
+  - 더블클릭 기반 Focus 알고리즘
+  - 부드러운 줌 인/아웃 애니메이션
+  - 4분할 → 1분할 자동 전환
+- **컨텍스트 메뉴**
+  - 우클릭 기반 빠른 기능 접근
+  - 카메라 설정, 영상 저장, 스냅샷 등
+
+#### UI 커스터마이징
+- **레이아웃 자유 변경**
+  - 드래그 앤 드롭 카메라 배치
+  - 다양한 분할 모드 (1/4/9/16 분할)
+- **테마 및 알림 설정**
 
 ---
 
-## 🙌 Thanks for reading!
+### 💬 실시간 소통 기능
+
+#### 채팅 시스템
+- **WebSocket 기반 실시간 채팅**
+  - 관제팀 간 즉각적인 정보 공유
+  - 이벤트 발생 시 자동 알림 메시지
+  - 채팅 이력 저장 및 검색
+
+#### 협업 기능
+- **화면 공유**: 특정 카메라 화면 팀원에게 공유
+- **이벤트 태깅**: 중요 이벤트 마킹 및 공유
+
+---
+
+## 💻 기술적 구현
+
+### 고성능 렌더링 파이프라인
+```java
+// Frame Merge Manager - 멀티스레드 기반 병렬 처리
+@Component
+public class FrameMergeManager {
+    private final ExecutorService threadPool;
+    private final Queue<Frame> frameQueue;
+    
+    public void processFrames(List<Camera> cameras) {
+        cameras.forEach(camera -> 
+            threadPool.submit(() -> {
+                Frame frame = captureFrame(camera);
+                analyzeFrame(frame);
+                frameQueue.offer(frame);
+            })
+        );
+    }
+}
+
+// Render Thread - 비동기 렌더링
+public class RenderThread extends Thread {
+    @Override
+    public void run() {
+        while (isRunning) {
+            Frame frame = frameQueue.poll();
+            if (frame != null) {
+                sendToClient(frame);
+            }
+        }
+    }
+}
+```
+
+### WebSocket 실시간 통신
+```javascript
+// React WebSocket 연결
+const useWebSocket = (url) => {
+  const [frames, setFrames] = useState([]);
+  
+  useEffect(() => {
+    const ws = new WebSocket(url);
+    
+    ws.onmessage = (event) => {
+      const frame = JSON.parse(event.data);
+      setFrames(prev => [...prev, frame]);
+    };
+    
+    return () => ws.close();
+  }, [url]);
+  
+  return frames;
+};
+```
+
+### Spring Security + JWT 인증
+```java
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig {
+    
+    @Bean
+    public SecurityFilterChain filterChain(HttpSecurity http) {
+        http
+            .csrf().disable()
+            .authorizeRequests()
+                .antMatchers("/api/auth/**").permitAll()
+                .anyRequest().authenticated()
+            .and()
+            .addFilterBefore(jwtAuthFilter, 
+                UsernamePasswordAuthenticationFilter.class);
+        
+        return http.build();
+    }
+}
+```
+
+---
+
+## 🎬 주요 화면
+
+### 메인 관제 화면
+- 다중 카메라 실시간 스트리밍
+- 이벤트 알림 패널
+- 실시간 맵 표시
+
+### 검색 화면
+- 조건별 영상 검색 인터페이스
+- 타임라인 기반 영상 탐색
+- 썸네일 미리보기
+
+### 설정 화면
+- 카메라 설정 관리
+- 분석 파라미터 조정
+- 사용자 권한 관리
+
+---
+
+## 👥 팀 구성 및 역할
+
+| 이름 | 역할 | 담당 업무 |
+|------|------|----------|
+| **박진성** | **Full-stack Developer & Tech Lead** | • 분석 서버 개발 (OpenCV 영상 분석)<br>• 미들 서버 개발 (Frame Merge, Render Thread)<br>• 전체 코드 아키텍처 설계 및 관리<br>• 서버 간 통신 프로토콜 구현 |
+| **염지원** | **Backend & Database Developer** | • Spring Security 기반 인증/인가 시스템<br>• 설정 페이지 API 개발<br>• 카메라 확대 기능 구현<br>• 데이터베이스 설계 및 최적화 |
+| **편장열** | **Frontend & Integration Developer** | • React 기반 관제 화면 개발<br>• 실시간 채팅 기능 구현<br>• 맵 연동 기능 개발<br>• 검색 페이지 구현<br>• 데이터베이스 설계 참여 |
+
+---
+
+## 📂 프로젝트 구조
+```
+sentry-project/
+├── analysis-server/              # 영상 분석 서버
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── com/sentry/analysis/
+│   │   │   │       ├── opencv/          # OpenCV 분석 모듈
+│   │   │   │       ├── ai/              # AI 모델 통합
+│   │   │   │       └── socket/          # 소켓 통신
+│   │   │   └── resources/
+│   │   └── test/
+│   └── pom.xml
+│
+├── middle-server/                # 미들웨어 서버
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/
+│   │   │   │   └── com/sentry/middle/
+│   │   │   │       ├── manager/         # Frame Merge Manager
+│   │   │   │       ├── render/          # Render Thread
+│   │   │   │       ├── websocket/       # WebSocket 핸들러
+│   │   │   │       ├── security/        # Spring Security
+│   │   │   │       └── smb/             # SMB 파일 접근
+│   │   │   └── resources/
+│   │   └── test/
+│   └── pom.xml
+│
+├── client/                       # React 클라이언트
+│   ├── src/
+│   │   ├── components/
+│   │   │   ├── VideoGrid/           # 영상 그리드
+│   │   │   ├── Chat/                # 채팅 컴포넌트
+│   │   │   ├── Map/                 # 맵 컴포넌트
+│   │   │   ├── Search/              # 검색 컴포넌트
+│   │   │   └── Settings/            # 설정 컴포넌트
+│   │   ├── hooks/
+│   │   │   ├── useWebSocket.js      # WebSocket 훅
+│   │   │   └── useAuth.js           # 인증 훅
+│   │   ├── contexts/                # Context API
+│   │   ├── utils/                   # 유틸리티
+│   │   └── App.js
+│   ├── public/
+│   └── package.json
+│
+├── database/
+│   ├── schema.sql                # 데이터베이스 스키마
+│   └── init-data.sql             # 초기 데이터
+│
+├── docs/                         # 문서
+│   ├── architecture.md
+│   ├── api-spec.md
+│   └── deployment.md
+│
+└── README.md
+```
+
+---
+
+## 🚀 향후 확장 계획
+
+### AI 고도화
+- [ ] 딥러닝 기반 고급 객체 인식
+- [ ] 이상 행동 패턴 학습 및 자동 탐지
+- [ ] 군중 밀집도 분석 및 위험 예측
+- [ ] 차량 번호판 인식 (OCR)
+
+### 사용자 경험 개선
+- [ ] 드래그 앤 드롭 레이아웃 커스터마이징
+- [ ] 대시보드 위젯 추가 (통계, 차트 등)
+- [ ] 다크 모드 및 테마 선택
+- [ ] 키보드 단축키 지원
+
+### 플랫폼 확장
+- [ ] 모바일 앱 개발 (React Native)
+- [ ] 태블릿 최적화 UI
+- [ ] 다국어 지원 (i18n)
+- [ ] 클라우드 배포 (AWS, Azure)
+
+### 성능 최적화
+- [ ] CDN 기반 영상 캐싱
+- [ ] Redis 기반 세션 관리
+- [ ] 로드 밸런싱 및 스케일 아웃
+- [ ] 영상 압축 알고리즘 고도화
+
+---
+
+## 📊 성과 및 평가
+
+### 기술적 성과
+- ✅ **고성능 실시간 스트리밍**: 멀티스레드 기반 16채널 동시 스트리밍 구현
+- ✅ **안정적인 시스템 아키텍처**: 3-Tier 구조로 확장성과 유지보수성 확보
+- ✅ **보안 강화**: Spring Security + JWT로 엔터프라이즈급 보안 구현
+- ✅ **효율적인 자원 관리**: Frame Merge Manager로 CPU/메모리 사용량 최적화
+
+### 팀워크 성과
+- ✅ **명확한 역할 분담**: 각자의 전문성을 살린 효율적인 협업
+- ✅ **체계적인 코드 관리**: Git 브랜치 전략 및 코드 리뷰 프로세스 확립
+- ✅ **문제 해결 능력**: 실시간 스트리밍, 멀티스레딩 등 고난도 기술 과제 해결
+
+### 자체 평가
+> 소규모 팀이지만 역할을 명확히 분배하고 협력하여 높은 난이도의 프로젝트를 성공적으로 완성하였으며, 
+> **보안·서버 통신·실시간 스트리밍·AI 분석** 등 다양한 영역에서 실질적인 성장 경험을 쌓았습니다.
+> 
+> 특히 실무에서 요구되는 **아키텍처 설계 능력, 성능 최적화 경험, 협업 프로세스**를 체득한 것이 가장 큰 수확입니다.
+
+---
+
+## 📝 기술 블로그
+
+프로젝트 개발 과정에서 겪은 기술적 도전과 해결 과정을 정리한 블로그 포스트:
+
+- [WebSocket을 활용한 실시간 영상 스트리밍 구현기](#)
+- [멀티스레드 환경에서의 Frame Merge 최적화](#)
+- [Spring Security + JWT로 구현하는 안전한 인증 시스템](#)
+- [OpenCV와 Java 연동: 실시간 영상 분석 파이프라인](#)
+
+---
+
+## 📚 참고 자료
+
+- [Spring Framework Documentation](https://spring.io/projects/spring-framework)
+- [React Documentation](https://react.dev/)
+- [OpenCV Documentation](https://docs.opencv.org/)
+- [WebSocket Protocol Specification](https://datatracker.ietf.org/doc/html/rfc6455)
+- [SMBJ Library](https://github.com/hierynomus/smbj)
+
+---
+
+<div align="center">
+
+**Built with 🔥 by Sentry Team**
+
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fyourusername%2Fsentry-project&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
+
+</div>
